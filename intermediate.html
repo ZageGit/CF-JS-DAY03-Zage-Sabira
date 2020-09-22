@@ -20,6 +20,7 @@
 
 
 
+/* activate intermediate 2
 
     var math = parseInt(prompt("add a math grade"));
     var phys = parseInt(prompt("add a physics grade"));
@@ -31,12 +32,21 @@
     document.write("<br>")
     document.write("Avg: ")
     document.write((math+phys+eng)/3)
+*/
 
 
+    function time (a) {
 
+    var hour = Math.floor(a/60);
+    var minutes =a -(hour*60);
+        
 
+        console.log(a +" minutes = " + hour + "hour(s) and " + minutes +" minute(s)");
 
+       
+    }
 
+    time (200)
 
 
     </script>
