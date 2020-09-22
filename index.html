@@ -1,45 +1,66 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>
-		
+    <title>
 
 
 
-	</title>
+    </title>
 </head>
+
 <body>
 
-	<script>
+    <script>
+        function crystalGazer(a, b, c, d) {
+            console.log("You will be a " + a + " in " + b + " and married to " + c + " with " + d + " children.")
+        }
+
+        crystalGazer("Developer", "Vienna", "George Clooney", "2")
 
 
+        function agefunction(a, b) {
+            var age = b - a;
+            console.log(age)
+            return age;
+        }
+
+        var multiage = agefunction(1988, 2020);
+        console.log("You are either " + multiage + " or " + (multiage - 1));
+
+        function agefunction(a) {
+            var today = new Date().getFullYear();
+            console.log(today);
+
+            var age = today - a;
 
 
-		function crystalGazer(a,b,c,d)
-		{
-		console.log("You will be a " + a + " in " + b + " and married to " + c + " with " + d + " children.")	
-		}
+            console.log("You are either " + age + " or " + (age - 1));
 
-		crystalGazer("Developer","Vienna","George Clooney","2")
+        }
+        agefunction(1988)
 
+        //degrees * (pi/180)
 
-		function agefunction (a,b)
-		{
-			var age = b-a;
-			console.log(age)
-			return age;				
-		}
+        function calculatRadian(a) {
 
-		var multiage = agefunction(1988,2020);
-		console.log("You are either " + multiage + " or " + (multiage-1));
+            radian = a * (Math.PI / 180);
+            console.log("The Radian is " + radian)
+        }
+        calculatRadian(90)
 
+        function getResult(height, width, depth) {
+            var area = height * width;
+            var volume = height * width * depth;
 
+            var result = [area, volume];
+            return result;
+        }
 
-
-		
-		
-
-	</script>	
+        document.write("The area is " + getResult(5, 8)[0]);
+        document.write("<br/>");
+        document.write("The volume is " + getResult(5, 8, 5)[1]);
+    </script>
 
 
 
